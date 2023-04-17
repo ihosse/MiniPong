@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        ResetGame();
+        Invoke("ResetGame",3);
     }
 
     private void ResetGame()

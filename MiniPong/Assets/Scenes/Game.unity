@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 542461981}
   - component: {fileID: 542461982}
   m_Layer: 0
-  m_Name: pad_2
+  m_Name: paddle_2
   m_TagString: Pad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 1528847314}
   - component: {fileID: 1528847315}
   m_Layer: 0
-  m_Name: pad_1
+  m_Name: paddle_1
   m_TagString: Pad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
