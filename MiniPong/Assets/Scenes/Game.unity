@@ -696,7 +696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a94cf77c67332498f6d7f43ad8f864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisName: Vertical2
+  axisName: Paddle_2
   speed: 15
   verticalLimitMax: 4.5
   verticalLimitMin: -4.5
@@ -959,7 +959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a94cf77c67332498f6d7f43ad8f864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisName: Vertical
+  axisName: Paddle_1
   speed: 15
   verticalLimitMax: 4.5
   verticalLimitMin: -4.5

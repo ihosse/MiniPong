@@ -4,12 +4,23 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI player1ScoreText;
-    [SerializeField] private TextMeshProUGUI player2ScoreText;
-    [SerializeField] private Rigidbody2D ball; 
-    [SerializeField] private Transform player1;
-    [SerializeField] private Transform player2;
-    [SerializeField] private int maxPoints = 10;
+    [SerializeField] 
+    private TextMeshProUGUI player1ScoreText;
+
+    [SerializeField] 
+    private TextMeshProUGUI player2ScoreText;
+
+    [SerializeField] 
+    private Rigidbody2D ball; 
+
+    [SerializeField] 
+    private Transform player1;
+
+    [SerializeField] 
+    private Transform player2;
+
+    [SerializeField] 
+    private int maxPoints = 10;
 
     private int player2Score = 0;
     private int player1Score = 0;
@@ -30,7 +41,7 @@ public class GameManager : MonoBehaviour
         player2.transform.position = new Vector2(player2.transform.position.x, 0);
 
         player1Score = player2Score = 0;
-        UpdatePoints();
+        ShowPoints();
     }
 
     public void ResetBall() 
@@ -38,7 +49,7 @@ public class GameManager : MonoBehaviour
         ball.transform.position = Vector2.zero;
     }
 
-    private void UpdatePoints() 
+    private void ShowPoints() 
     {
         player1ScoreText.text = player1Score.ToString();
         player2ScoreText.text = player2Score.ToString();
@@ -55,7 +66,7 @@ public class GameManager : MonoBehaviour
             player2Score++;
         }
 
-        UpdatePoints();
+        ShowPoints();
 
         if (player1Score >= maxPoints || player2Score >= maxPoints) 
         {

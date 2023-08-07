@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    [SerializeField] private GameManager gameManager;
-    [SerializeField] private float iniBallSpeed = 10f;
+    [SerializeField] 
+    private GameManager gameManager;
+
+    [SerializeField] 
+    private float iniBallSpeed = 10f;
+
+    [SerializeField] 
+    private string padTag, verticalWallTag, hotizontalWallTag;
+
     private float ballSpeed;
     private Vector2 direction;
-    [SerializeField] private string padTag, verticalWallTag, hotizontalWallTag;
 
     void Start()
     {
